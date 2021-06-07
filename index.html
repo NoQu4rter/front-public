@@ -16,7 +16,7 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
 
-        <img src="{{ url_for('static', path='images/logo.jpeg') }}" alt="" height="60" width="60">
+        <img src="img/logo3.png" alt="" height="140" width="140">
 
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,62 +25,79 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#">Productos</a>
         </li>
       </ul>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="display: none;">
+        <button class="btn btn-dark" type="submit" style="display: none;">Buscar</button>
       </form>
     </div>
   </div>
 </nav>
 
-<section class="foto">
+<section class="fondo_header">
 <div class="jumbotron text-center">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <br>
+  <h1 class="display-4">Imagínalo en tu hogar</h1>
+  <p class="lead">Aquí encontrarás un ejemplo de texto precioso que puedes colocar junto a tu título.</p>
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p>Deja tu hogar, en las mejores manos.</p>
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <a class="btn btn-dark btn-lg" href="#" role="button">¡Conoce más!</a>
   </p>
 </div>
 
 <div class="jumbotron jumbotron-fluid text-center">
   <div class="container">
-    <h1 class="display-4">Fluid jumbotron</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <h1 class="display-4">&nbsp;</h1>
+    <p class="lead">&nbsp;</p>
   </div>
 </div>
 </section>
+
 		<div class="container">
-			<div class="row">
-				<div class="col-md-8 descripcion">
-				  <p><h3>Tit</h3></p>
-					<p>Free, responsive Ecommerce template containing many types of product pages, shopping carts, and different homepages with product presentations. Designed for business. Built with the newest Bootstrap 4 and Material Design. MIT license – free for personal and commercial use.</p>
-					<p><h3>$4.300</h3></p>
+			<div class="row productos">
+        <div class="col-md-1"></div>
+				<div class="col-md-4 cuadro_prod mb-2">
+          <div class="head_prod">
+  				  <p><h3>Set 4 tazas de Acero Enlozado</h3></p>
+  					<p>Características: 
+  Resiste altas temperatura, además es libre de tóxicos y resistente a reacciones químicas causadas por alimentos, es Anti-bacterial y Anti-rayaduras.
+  Medida: 8cm de diámetro
+  Capacidad: 360ml
+  Cantidad: 4 unidades
+  Color: Negro jaspeado
+  </p>
+  					<p>$4.300</p>
+          </div>
+          <div>
+            <img src="img/productos/1.png" alt="" height="140" width="140">
+            <img src="img/productos/2.png" alt="" height="140" width="140">
+          </div>
 				</div>
-				<div class="col-md-4">
-				  IMG
-				</div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4 cuadro_prod mb-2">
+          <div class="head_prod">
+            <p><h3>Set 4 tazas de Acero Enlozado</h3></p>
+            <p>Características: 
+  Resiste altas temperatura, además es libre de tóxicos y resistente a reacciones químicas causadas por alimentos, es Anti-bacterial y Anti-rayaduras.
+  Medida: 8cm de diámetro
+  Capacidad: 360ml
+  Cantidad: 4 unidades
+  Color: Negro jaspeado
+  </p>
+            <p>$4.300</p>
+          </div>
+          <div>
+            <img src="img/productos/1.png" alt="" height="140" width="140">
+            <img src="img/productos/2.png" alt="" height="140" width="140">
+          </div>
+        </div>
+        <div class="col-md-1"></div>
 			</div>
 		</div>
 

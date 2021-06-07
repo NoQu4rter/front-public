@@ -1,9 +1,25 @@
 body { 
 
+	background-image: url("../img/bush_2.png");
 	padding-top: 5em;
 	font-family: tahoma;
 
  }
+
+.fondo_header {
+
+	background-image: url("../img/foto2.jpg");
+	background-size: 100% 200%;
+	background-position: 0px -32px;
+
+}
+
+.navbar { 
+
+	height: 5em;
+	box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+
+}
 
 .bg-orange {
 
@@ -11,22 +27,43 @@ body {
 
 }
 
-.navbar-collapse {
+@media (max-width: 767px) {
+	.navbar-collapse {
 
-	background: #ffbe85;
+		background: #ffbe85;
+
+	}
+}
+
+.jumbotron .text-center {
+
+	padding-top: 1em;
 
 }
 
-.foto {
+.jumbotron-fluid {
 
-	background-image: url("../img/foto2.jpg");
-	background-size: 100% 200%;
-	background-position: 0px -10px;
+	box-shadow: 0px 8px 8px -6px rgba(0,0,0,.35);
 
 }
 
-div p:last-child {
+.cuadro_prod p:last-child {
 
 	text-align: right;
-	background: #BA4A00;
+	font-weight: bold;
+
+}
+
+.cuadro_prod {
+
+	box-shadow: 5px 5px 20px,  0 7px 9px -7px rgba(0,0,0,0.4) inset;
+	background: rgba(255, 255, 255, .8);
+	border-radius: 6px;
+
+}
+
+.head_prod {
+
+	border-bottom: 1px solid rgba(170, 170, 170, .75);
+
 }
