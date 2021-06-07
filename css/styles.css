@@ -1,0 +1,32 @@
+body { 
+
+	padding-top: 5em;
+	font-family: tahoma;
+
+ }
+
+.bg-orange {
+
+	background: #BA4A00;
+
+}
+
+.navbar-collapse {
+
+	background: #ffbe85;
+
+}
+
+.foto {
+
+	background-image: url("../img/foto2.jpg");
+	background-size: 100% 200%;
+	background-position: 0px -10px;
+
+}
+
+div p:last-child {
+
+	text-align: right;
+	background: #BA4A00;
+}
