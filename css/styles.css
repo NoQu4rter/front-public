@@ -56,15 +56,37 @@ body {
 
 .cuadro_prod {
 
+	padding: 0.1em 1em 1em 1em;
 	width: 100%;
 	box-shadow: 5px 5px 20px,  0 7px 9px -7px rgba(0,0,0,0.4) inset;
-	background: rgba(255, 255, 255, .8);
+	background: rgba(0, 0, 0, .95);
 	border-radius: 6px;
 
 }
 
 .head_prod {
 
-	border-bottom: 1px solid rgba(170, 170, 170, .75);
+	border-bottom: 1px solid rgba(30, 30, 30, .75);
+	color: #C69900;
+
+}
+
+.cuadro_prod a {
+
+	color: yellow;
+
+}
+
+.fotos_prod {
+
+	text-align: center;
+	padding-top: 0.5em;
+
+}
+
+.ver_detalles {
+
+	height: 1em;
+	width: 70%;
 
 }

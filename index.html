@@ -63,11 +63,11 @@
 
 			<div class="row productos">
 
-				<div class="col-sm">
+				<div class="col-sm" id="head_prod_1">
           <div class="cuadro_prod mb-2">
             <div class="head_prod">
-    				  <p><h3>Set 4 tazas de Acero Enlozado</h3></p>
-              <span style="display:none">
+    				  <p><h3 class="text-center">Set 4 tazas de Acero Enlozado</h3></p>
+              <span id='1-1' style="display:none">
       					<p>Características: 
                 <p>Resiste altas temperatura, además es libre de tóxicos y resistente a reacciones químicas causadas por alimentos, es Anti-bacterial y Anti-rayaduras.</p>
                 <p>Medida: 8cm de diámetro
@@ -77,18 +77,21 @@
       					<p>$4.300</p>
               </span>
             </div>
-            <div>
+            <div class="fotos_prod">
               <img src="img/productos/1.png" alt="" height="140" width="140">
               <img src="img/productos/2.png" alt="" height="140" width="140">
+            </div>
+            <div class="mt-2 text-center">
+              <a href="#head_prod_1" onclick="detalles('1-1','1-2');" id='1-2'>Mostrar detalles</a>
             </div>
           </div>
 				</div>
 
-        <div class="col-sm">
+        <div class="col-sm" id="head_prod_2">
           <div class="cuadro_prod mb-2">
             <div class="head_prod">
-              <p><h3>Set Cafetera y tazas Acero Enlozado</h3></p>
-              <span style="display:none">
+              <p><h3 class="text-center">Set Cafetera y tazas Acero Enlozado</h3></p>
+              <span id='2-1' style="display:none">
                 <p>1 Cafetera grande - Capacidad: 2LTS</p>
                 <p>4 Tazas Capacidad: 360ml</p>
                 <p>Características: Resiste altas temperatura, además es libre de tóxicos y resistente a reacciones químicas causadas por alimentos, es Anti-bacterial y Anti-rayaduras</p>
@@ -98,18 +101,21 @@
                 <p>$28.000</p>
               </span>
             </div>
-            <div>
+            <div class="fotos_prod">
               <img src="img/productos/3.png" alt="" height="140" width="140">
               <img src="img/productos/4.png" alt="" height="140" width="140">
+            </div>
+            <div class="mt-2 text-center">
+              <a href="#head_prod_2" onclick="detalles('2-1','2-2');" id='2-2'>Mostrar detalles</a>
             </div>
           </div>
         </div>
 
-        <div class="col-sm">
+        <div class="col-sm" id="head_prod_3">
           <div class="cuadro_prod mb-2">
             <div class="head_prod">
-              <p><h3>Set Cafetera y tazas Acero Enlozado</h3></p>
-              <span style="display:none">
+              <p><h3 class="text-center">Set Cafetera y tazas Acero Enlozado</h3></p>
+              <span id='3-1' style="display:none">
                 <p>1 Cafetera grande - Capacidad: 2LTS</p>
                 <p>4 Tazas Capacidad: 360ml</p>
                 <p>Características: Resiste altas temperatura, además es libre de tóxicos y resistente a reacciones químicas causadas por alimentos, es Anti-bacterial y Anti-rayaduras</p>
@@ -119,9 +125,12 @@
                 <p>$28.000</p>
               </span>
             </div>
-            <div>
-              <img src="img/productos/3.png" alt="" height="140" width="140">
-              <img src="img/productos/4.png" alt="" height="140" width="140">
+            <div class="fotos_prod">
+              <img src="img/productos/5.jpeg" alt="" height="140" width="160">
+              <img src="img/productos/6.jpeg" alt="" height="140" width="140">
+            </div>
+            <div class="mt-2 text-center">
+              <a href="#head_prod_3" onclick="detalles('3-1','3-2');" id='3-2'>Mostrar detalles</a>
             </div>
           </div>
         </div>
@@ -133,6 +142,30 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+    <script type='text/javascript'>
+
+      function detalles(id_1,id_2){
+
+        if(document.getElementById(id_1).getAttribute("style") == 'display:none'){
+
+          document.getElementById(id_1).setAttribute("style", "display:null");
+
+          document.getElementById(id_2).innerHTML = 'Ocultar detalles';
+
+        }
+
+        else{
+
+          document.getElementById(id_1).setAttribute("style", "display:none");
+
+          document.getElementById(id_2).innerHTML = 'Mostrar detalles';
+
+        }
+
+      }
+
+    </script>
 
 	</body>
 </html>
