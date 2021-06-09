@@ -56,6 +56,7 @@ body {
 
 .cuadro_prod {
 
+	width: 100%;
 	box-shadow: 5px 5px 20px,  0 7px 9px -7px rgba(0,0,0,0.4) inset;
 	background: rgba(255, 255, 255, .8);
 	border-radius: 6px;
